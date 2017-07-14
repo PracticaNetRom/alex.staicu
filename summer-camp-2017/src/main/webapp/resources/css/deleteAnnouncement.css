@@ -1,0 +1,12 @@
+@CHARSET "ISO-8859-1";
+.darkForm{
+    background-color: #555;
+    padding: 20px 30px 20px 30px;
+    color: #D3D3D3;
+}
+.darkForm label {
+    font-weight: bold;
+}
+#code{
+	min-width:400px;
+}

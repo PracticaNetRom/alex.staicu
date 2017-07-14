@@ -8,7 +8,7 @@ public class Announcement {
 	private String content;
 	private String location;
 	private boolean status;	
-	private Integer confirmationCode;
+	private String confirmationCode;
 	private Date createDate;
 	private Date expireDate;
 	private String ownerEmail;
@@ -17,11 +17,10 @@ public class Announcement {
 	private String ownerPhone;
 	private String categoryName;
 	private String categoryDescription;
-	
-	
+
 
 	public Announcement(Integer id, String title, String content, String location, boolean status,
-			Integer confirmationCode, Date createDate, Date expireDate, String ownerEmail, String ownerFirstName,
+			String confirmationCode, Date createDate, Date expireDate, String ownerEmail, String ownerFirstName,
 			String ownerLastName, String ownerPhone, String categoryName, String categoryDescription) {
 		this.id = id;
 		this.title = title;
@@ -82,11 +81,11 @@ public class Announcement {
 		this.status = status;
 	}
 
-	public Integer getConfirmationCode() {
+	public String getConfirmationCode() {
 		return confirmationCode;
 	}
 
-	public void setConfirmationCode(Integer confirmationCode) {
+	public void setConfirmationCode(String confirmationCode) {
 		this.confirmationCode = confirmationCode;
 	}
 
@@ -153,7 +152,8 @@ public class Announcement {
 	public void setCategoryDescription(String categoryDescription) {
 		this.categoryDescription = categoryDescription;
 	}
-
+	
+	
 	public void showInfo() {
 		System.out.println("id: " + id);
 		System.out.println("titile: " + title);
